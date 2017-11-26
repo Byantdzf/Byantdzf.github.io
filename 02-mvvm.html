@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>mvvm</title>
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" v-model="username" :value="message"/>
+			{{username}}
+			{{message}}
+		</div>
+		<script type="text/javascript" src="js/vue.js" ></script>
+		<script>
+			var vm = new Vue({
+				el:'#app',
+				data:{
+					username:'lili',
+					message:"shani"
+				}
+			});
+			
+		</script>
+	</body>
+</html>
